@@ -1,0 +1,99 @@
+[
+   {
+      "brandTitle": "iffco-tokio-general",
+      "brandLogo": "../img/iffco-tokio-general-insurance.webp",
+      "campaign": "5",
+      "award": "11",
+      "Film": [
+         {
+            "FilmCount": "09",
+            "filmTumb": "../img/268x268.jpg",
+            "filmBig": "assets/big.mp4",
+            "filmHashTag": "#Take Off"
+         },
+         {
+            "FilmCount": "09",
+            "filmTumb": "../img/268x268.jpg",
+            "filmBig": "assets/big.mp4",
+            "filmHashTag": "#Take Off"
+         }
+      ],
+      "Category": [
+         {
+            "filmTumb": "../img/268x268.jpg",
+            "filmBig": "assets/big.mp4",
+            "filmHashTag": "#Take Off1"
+         },
+         {
+            "filmTumb": "../img/268x268.jpg",
+            "filmBig": "assets/big.mp4",
+            "filmHashTag": "#Take Off2"
+         }
+      ],
+      "SMCtitle": "Cate1",
+      "SMChashTag": "#Take Off",
+      "uiUxMainTitle": "Cate1",
+      "uiuxCount": 2,
+      "uiUxsubTitle": "Canon",
+      "uiUxCaseStUrl": "aaa.com",
+      "uiUxWebUrl": "canon.com",
+      "uiUxScreenshot": "assets/screenCanon.jpg",
+      "eOtheTitle": "Explore other brand work",
+      "othLogo": "assets/thumb-24-06-22/bird.jpg",
+      "status": true
+   },
+   {
+      "brandName": "HDFC Life",
+      "brandLogo": "../img/aegon-life-insurance.webp",
+      "brandTitle": "Canon India",
+      "campaign": 43,
+      "award": 5,
+      "flmTitle": "Film",
+      "FilmCount": "09",
+      "Film": [
+         {            
+            "filmTumb": "./img/banner1.jpg",
+            "filmBig": "assets/big.mp4",
+            "filmHashTag": "#Take Off1",
+            "type": "youtube"
+         },
+         {
+            "filmTumb": "./img/banner1.jpg",
+            "filmBig": "assets/big.mp4",
+            "filmHashTag": "#Take Off2"
+         },
+         {
+            "filmTumb": "./img/banner1.jpg",
+            "filmBig": "assets/big.mp4",
+            "filmHashTag": "#Take Off2"
+         },
+         {
+            "filmTumb": "./img/banner1.jpg",
+            "filmBig": "assets/big.mp4",
+            "filmHashTag": "#Take Off2"
+         },
+         {
+            "filmTumb": "./img/banner1.jpg",
+            "filmBig": "assets/big.mp4",
+            "filmHashTag": "#Take Off2"
+         },
+         {
+            "filmTumb": "./img/banner1.jpg",
+            "filmBig": "assets/big.mp4",
+            "filmHashTag": "#Take Off2"
+         }
+      ],
+      "SMCtitle": "Cate2",
+      "SMChashTag": "#Take Off",
+      "uiUxMainTitle": "UI & UX",
+      "uiuxCount": 2,
+      "uiUxsubTitle": "Canon",
+      "uiUxDesc":"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet",
+      "uiUxCaseStUrl": "aaa.com",
+      "uiUxWebUrl": "canon.com",
+      "uiUxScreenshot": "assets/screenCanon.jpg",
+      "eOtheTitle": "Explore other brand work",
+      "othLogo": "assets/thumb-24-06-22/bird.jpg",
+      "status": true
+   }
+   ]
