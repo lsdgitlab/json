@@ -2,8 +2,7 @@
 import $ from 'jquery'
 import 'owl.carousel'
 import lozad from 'lozad'
-import BigPicture from 'bigpicture'
-// import request from 'request'
+
 
 
 // use for dynamic projects
@@ -341,42 +340,29 @@ $(document).ready(function () {
 })
 // import "./page-animation/barba";
 
-// use for Bigpicture
-BigPicture({
-	// element from which animation starts (required)
-	el: e.target,
-	// image url
-	imgSrc: 'https://yourimage.jpg',
-	// video src (String) or sources (Array)
-	vidSrc: ['https://yourvideo.mp4', 'https://yourvideo.webm'],
-	// iframe embed URL
-	iframeSrc: 'https://youriframe.html',
-	// vimeo ID
-	vimeoSrc: '119287310',
-	// youtube ID
-	ytSrc: 'z_PeaHVcohg',
-	// use youtube-nocookie
-	ytNoCookie: false,
-	// audio URL
-	audio: 'https://youraudio.mp3',
-	// see below for more gallery options
-	gallery: '#image_container',
-	// attribute used to find gallery elements
-	galleryAttribute: 'data-bp',
-	// set custom dimensions for embeds / videos
-	dimensions: [1920, 1080],
-	// show or hide default loading indicator
-	noLoader: false,
-	// customize the overlay color (any valid css color value)
-	overlayColor: 'rgba(0, 0, 0, .8)',
-	// open animation callback
-	animationStart: () => {},
-	// open animation callback
-	animationEnd: () => {},
-	// close callback
-	onClose: () => {},
-	// gallery image change callback
-	onChangeImage: () => {},
-})
+
+
+// var Youtube = (function () {
+//   'use strict';
+
+//   var video, results;
+
+//   var getThumb = function (url, size) {
+//       if (url === null) {
+//           return '';
+//       }
+//       size    = (size === null) ? 'big' : size;
+//       results = url.match('[\\?&]v=([^&#]*)');
+//       video   = (results === null) ? url : results[1];
+
+//       if (size === 'small') {
+//           return 'http://img.youtube.com/vi/' + video + '/2.jpg';
+//       }
+//       return 'http://img.youtube.com/vi/' + video + '/0.jpg';
+//   };
+//   return {
+//       thumb: getThumb
+//   };
+// }());
 
 

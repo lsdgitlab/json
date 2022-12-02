@@ -8,7 +8,7 @@
          {
             "FilmCount": "09",
             "filmTumb": "../img/268x268.jpg",
-            "filmBig": "assets/big.mp4",
+            "filmBig": "xqBb9Mh3Rkk",
             "filmHashTag": "#Take Off1"
          },
          {
@@ -16,16 +16,106 @@
             "filmTumb": "../img/268x268.jpg",
             "filmBig": "assets/big.mp4",
             "filmHashTag": "#Take Off2"
+         },{            
+            "filmTumb": "./img/banner1.jpg",
+            "filmBig": "X31W_-26d-E",
+            "filmHashTag": "#Take Off1",
+            "type": "youtube"
+         },
+         {
+            "filmTumb": "./img/banner1.jpg",
+            "filmBig": "QpK0z2kGlRs",
+            "filmHashTag": "#Take Off2"
+         },
+         {
+            "filmTumb": "./img/banner1.jpg",
+            "filmBig": "DESJSNxhq8k",
+            "filmHashTag": "#Take Off2"
+         },
+         {
+            "filmTumb": "./img/banner1.jpg",
+            "filmBig": "zM3rDvfx7Pg",
+            "filmHashTag": "#Take Off2"
+         },
+         {
+            "filmTumb": "./img/banner1.jpg",
+            "filmBig": "assets/big.mp4",
+            "filmHashTag": "#Take Off2"
+         },
+         {
+            "filmTumb": "./img/banner1.jpg",
+            "filmBig": "QpK0z2kGlRs",
+            "filmHashTag": "#Take Off2"
+         },
+         {
+            "filmTumb": "./img/banner1.jpg",
+            "filmBig": "DESJSNxhq8k",
+            "filmHashTag": "#Take Off2"
+         },
+         {
+            "filmTumb": "./img/banner1.jpg",
+            "filmBig": "zM3rDvfx7Pg",
+            "filmHashTag": "#Take Off2"
+         },
+         {
+            "filmTumb": "./img/banner1.jpg",
+            "filmBig": "assets/big.mp4",
+            "filmHashTag": "#Take Off2"
+         },
+         {
+            "filmTumb": "./img/banner1.jpg",
+            "filmBig": "QpK0z2kGlRs",
+            "filmHashTag": "#Take Off2"
+         },
+         {
+            "filmTumb": "./img/banner1.jpg",
+            "filmBig": "DESJSNxhq8k",
+            "filmHashTag": "#Take Off2"
+         },
+         {
+            "filmTumb": "./img/banner1.jpg",
+            "filmBig": "zM3rDvfx7Pg",
+            "filmHashTag": "#Take Off2"
+         },
+         {
+            "filmTumb": "./img/banner1.jpg",
+            "filmBig": "assets/big.mp4",
+            "filmHashTag": "#Take Off2"
          }
       ],
       "Category": [
          {
             "filmTumb": "../img/268x268.jpg",
-            "filmBig": "assets/big.mp4",
+            "filmBig": "cjgaAnGCRuY",
             "filmHashTag": "#Take Off1"
          },
          {
             "filmTumb": "../img/268x268.jpg",
+            "filmBig": "assets/big.mp4",
+            "filmHashTag": "#Take Off2"
+         },{            
+            "filmTumb": "./img/banner1.jpg",
+            "filmBig": "X31W_-26d-E",
+            "filmHashTag": "#Take Off1",
+            "type": "youtube"
+         },
+         {
+            "filmTumb": "./img/banner1.jpg",
+            "filmBig": "QpK0z2kGlRs",
+            "filmHashTag": "#Take Off2"
+         },
+         {
+            "filmTumb": "./img/banner1.jpg",
+            "filmBig": "DESJSNxhq8k",
+            "filmHashTag": "#Take Off2"
+         },
+         {
+            "filmTumb": "./img/banner1.jpg",
+            "filmBig": "assets/big.mp4",
+            "filmHashTag": "#Take Off2"
+         },
+         {
+            "filmTumb": "./img/banner1.jpg",
             "filmBig": "assets/big.mp4",
             "filmHashTag": "#Take Off2"
          }
@@ -53,13 +143,18 @@
       "Film": [
          {            
             "filmTumb": "./img/banner1.jpg",
-            "filmBig": "assets/big.mp4",
+            "filmBig": "X31W_-26d-E",
             "filmHashTag": "#Take Off1",
             "type": "youtube"
          },
          {
             "filmTumb": "./img/banner1.jpg",
-            "filmBig": "assets/big.mp4",
+            "filmBig": "QpK0z2kGlRs",
+            "filmHashTag": "#Take Off2"
+         },
+         {
+            "filmTumb": "./img/banner1.jpg",
+            "filmBig": "DESJSNxhq8k",
             "filmHashTag": "#Take Off2"
          },
          {
@@ -74,12 +169,7 @@
          },
          {
             "filmTumb": "./img/banner1.jpg",
-            "filmBig": "assets/big.mp4",
-            "filmHashTag": "#Take Off2"
-         },
-         {
-            "filmTumb": "./img/banner1.jpg",
-            "filmBig": "assets/big.mp4",
+            "filmBig": "l5kpmVTPXFw",
             "filmHashTag": "#Take Off2"
          }
       ],
