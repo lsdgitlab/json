@@ -6,7 +6,8 @@ import brandData from './brand-data.json'
 console.log('Brand Data =>', brandData)
 
 window.addEventListener('DOMContentLoaded', () => {
-  topheader(0)
+  topheader(0);
+  drpdwnTitle(0)
   // console.log('The DOM Is Loaded');
   brandData.forEach((el, idx) => {
     // headerData(el)
@@ -25,17 +26,9 @@ function topheader(ele) {
   awd.textContent = brandData[ele].award + ' Awads'
 
   const filmSec = document.getElementById('filmCont');
-  console.log(filmSec);
-  const flmCnt = document.querySelector('#filmSec .second-title span')
+  const flmCnt = document.querySelector('#filmSec .second-title span');
+  // console.log(flmCnt);
   flmCnt.textContent = '(' + brandData[ele].Film.length + ')';
-
-  // load more
-  let loadMbtn = document.createElement('button');
-  loadMbtn.textContent = "Load More";
-  // loadMbtn.appendChild(filmSec)
-loadMbtn.addEventListener('click', ()=>{
-  console.log(loadMbtn);
-})
 
   let filcard = ''
   brandData[ele].Film.forEach((item, indx) => {
@@ -57,12 +50,31 @@ loadMbtn.addEventListener('click', ()=>{
       '<div class="title">#Take Off</div>' +
       '</div>'
   })
-  filmSec.innerHTML = filcard
+  filmSec.innerHTML = filcard;
+
+
 }
 
-// use for load more
+  // use for dropdown
+  function drpdwnTitle(e){
+    let brDrpdwn = document.getElementById('brandName');
+    let brdName = brandData[e].brandTitle;
+    // for(var i = 0; i< brdName.length; i++){
+      
+    //   // console.log(brdName[i]);
+    // }
+    // brDrpdwn.forEach((item)=>{
+    //   // console.log(item.brdName);
+    //   console.log("Options =>",brDrpdwn[item].value = brdName);
+    // })
+    for(var i =0; i < brDrpdwn.length; i++){
+      console.log("Options =>");
+      // console.log('<li>'+ brDrpdwn[i] +'</li>');
+      // console.log(brDrpdwn[i]);
 
+    }
 
+  }
 
 
 
@@ -125,4 +137,29 @@ var Youtube = (function () {
 var thumb = Youtube.thumb('http://www.youtube.com/watch?v=sjWmky2EAkU', 'big');
 
 console.log(thumb);
+console.log("Search",brandData.brandTitle);
+// use for search
+const searchBtn = document.querySelector('#search button');
+const output = document.querySelector('.output');
+let brDrpdwn = document.getElementById('brandName');
+searchBtn.addEventListener('click', (e)=>{
+  maker(brandData)
+});
+
+function maker(brandData){
+  
+  brandData.forEach( el =>{
+    for(var i = 0; i < brDrpdwn.length; i++ ){
+      // console.log(brDrpdwn[i]);
+      var optn = '<option>'+ `${el.brandTitle}`+'</option>';
+      brDrpdwn[i].append(optn)
+    }
+    // brDrpdwn.value = `${el.brandTitle}`
+    // console.log(brDrpdwn.value = `${el.brandTitle}`);
+  })
+}
+
+
+
+
 

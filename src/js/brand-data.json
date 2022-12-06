@@ -133,9 +133,61 @@
       "status": true
    },
    {
-      "brandName": "HDFC Life",
+      "brandTitle": "HDFC Life",
       "brandLogo": "../img/aegon-life-insurance.webp",
+      "campaign": 43,
+      "award": 5,
+      "flmTitle": "Film",
+      "FilmCount": "09",
+      "Film": [
+         {            
+            "filmTumb": "./img/banner1.jpg",
+            "filmBig": "X31W_-26d-E",
+            "filmHashTag": "#Take Off1",
+            "type": "youtube"
+         },
+         {
+            "filmTumb": "./img/banner1.jpg",
+            "filmBig": "QpK0z2kGlRs",
+            "filmHashTag": "#Take Off2"
+         },
+         {
+            "filmTumb": "./img/banner1.jpg",
+            "filmBig": "DESJSNxhq8k",
+            "filmHashTag": "#Take Off2"
+         },
+         {
+            "filmTumb": "./img/banner1.jpg",
+            "filmBig": "assets/big.mp4",
+            "filmHashTag": "#Take Off2"
+         },
+         {
+            "filmTumb": "./img/banner1.jpg",
+            "filmBig": "assets/big.mp4",
+            "filmHashTag": "#Take Off2"
+         },
+         {
+            "filmTumb": "./img/banner1.jpg",
+            "filmBig": "l5kpmVTPXFw",
+            "filmHashTag": "#Take Off2"
+         }
+      ],
+      "SMCtitle": "Cate2",
+      "SMChashTag": "#Take Off",
+      "uiUxMainTitle": "UI & UX",
+      "uiuxCount": 2,
+      "uiUxsubTitle": "Canon",
+      "uiUxDesc":"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet",
+      "uiUxCaseStUrl": "aaa.com",
+      "uiUxWebUrl": "canon.com",
+      "uiUxScreenshot": "assets/screenCanon.jpg",
+      "eOtheTitle": "Explore other brand work",
+      "othLogo": "assets/thumb-24-06-22/bird.jpg",
+      "status": true
+   },
+   {
       "brandTitle": "Canon India",
+      "brandLogo": "../img/aegon-life-insurance.webp",
       "campaign": 43,
       "award": 5,
       "flmTitle": "Film",
