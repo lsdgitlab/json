@@ -6,7 +6,7 @@ console.log('Brand Data =>', brandData)
 
 window.addEventListener('DOMContentLoaded', () => {
   topheader(0)
-  brdrpdwn(0)
+  brandDrpDwn(brandData)
   // console.log('The DOM Is Loaded');
   brandData.forEach((el, idx) => {
     // headerData(el)
@@ -134,33 +134,31 @@ function brdrpdwn(oplist) {
 
 // let bradInfo = document.getElementById('brandInfo');
 
-// console.log('Search', brandData.brandTitle)
 // use for search
 const searchBtn = document.querySelector('#search button')
 const output = document.querySelector('.output')
 let brDrpdwn = document.getElementById('brandName')
-// var optn = document.createElement('option')
-// optn.value = ''
-// optn.text = 'asas'
-// brDrpdwn.append(optn)
 
 searchBtn.addEventListener('click', (e) => {
-  maker(brandData)
+  brandDrpDwn(brandData)
   // console.log('click', brandData)
 })
 
-function maker(brandData) {
+function brandDrpDwn(brandData) {
   brandData.forEach((el) => {
-    // optn.value = el.brandTitle
-    let option = `'<option value=' + '${el.brandTitle}' + '>' + '${el.brandTitle}' + '</option>'`
-    brDrpdwn.append(option)
-    console.log(option)
-    // for (var i = 0; i < brDrpdwn.length; i++) {
-    //   console.log(brDrpdwn[i])
-    //   // var optn = '<option>' + `${el.brandTitle}` + '</option>'
-    //   // brDrpdwn[i].append(optn)
-    // }
-    // brDrpdwn.value = `${el.brandTitle}`
-    // console.log(brDrpdwn.value = `${el.brandTitle}`);
+    var optn = document.createElement('option')
+    // optn.value = el.brandTitle;
+    optn.value = `${el.brandTitle}`
+    optn.text = `${el.brandTitle}`
+    // let option = <option value=' + '${el.brandTitle}' + >' + '${el.brandTitle}' + '</option>'
+    brDrpdwn.append(optn)
+
+    output.innerHTML += `
+    <ul>
+    <li> ${el.brandTitle}</li>
+    <li> ${el.campaign}</li>
+    <li> ${el.award}</li>
+    <li> ${el.status}</li>
+    </ul>`
   })
 }
