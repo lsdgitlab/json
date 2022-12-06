@@ -20,6 +20,10 @@ const htmlPageNames = [
         pageName: 'category.html',
         title: 'Lsdigital gallery'
     }, 
+    {
+        pageName: 'test.html',
+        title: 'Test'
+    }, 
 ];
 // get the html page name
 let htmlFileName = htmlPageNames.map(htmlPage=> htmlPage.pageName);

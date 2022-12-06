@@ -5,9 +5,11 @@ import 'owl.carousel'
 import lozad from 'lozad'
 
 
+
 // use for dynamic projects
 import brandJs from './brand.js'
-
+import galdata from './wikipedia.js';
+// console.log(galdata);
 
 import { gotoId, playPause } from './main'
 // import contentData from './showDate.json'

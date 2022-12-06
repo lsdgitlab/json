@@ -5,6 +5,7 @@ import 'owl.carousel';
 import  '../css/sass/index.scss';
 import lozad from 'lozad';
 import './brand.js';
+// import './wikipedia.js';
 // var modernizr = require("modernizr");
 // // .js
 // // import "./modernizr";
