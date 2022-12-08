@@ -1,0 +1,78 @@
+
+git init
+
+git status (check the files)  or ls
+
+git diff
+
+git config --list (check the login details)
+
+git remote add origin (url)
+
+git remote add .
+
+git commit -m "initial conmmit message"
+
+git push origin HEAD or git push origin master(branch name)
+
+git checkout master
+clear
+=============================
+
+git checkout -b newbranch
+
+git checkout newbranch
+
+git commit -m ""
+
+git push origin newbranch
+
+============================
+git fetch --all
+============================
+
+git stash (check the unmerge file)
+
+git reset --merge (unmerge file)
+
+q (exit- no next tag press return)
+--------------------------------------------------------------------
+git config --global user.email "GFGexample@gmail.orgg"
+git config --global user.password "1234321"
+
+git config --list --show-origin
+
+git config --global --unset-all 
+
+---------------------------------------------------------------------
+
+git clone (url)
+
+git pull origin 
+
+----------------------------------------------------------------------
+
+:wq (exit)
+
+https://stackoverflow.com/questions/161813/how-do-i-resolve-merge-conflicts-in-a-git-repository
+
+inorderline@herbal
+
+
+ modified:   Js-web-projects/src/assets/css/main.scss
+ modified:   Js-web-projects/src/assets/js/app.js
+
+https://github.com/lsdgitlab/javascript.git
+
+
+
+
+git remote add origin https://github.com/lsdgitlab/json.git
+git branch -M main
+git push -u origin main
+
+
+
+remote: Create a pull request for '8-12-22' on GitHub by visiting:
+remote:      https://github.com/lsdgitlab/json/pull/new/8-12-22
+
