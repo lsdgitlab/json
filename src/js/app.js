@@ -4,8 +4,6 @@ import $ from 'jquery'
 import 'owl.carousel'
 import lozad from 'lozad'
 
-
-
 // use for dynamic projects
 import brandJs from './brand.js'
 import galdata from './wikipedia.js';
@@ -15,12 +13,12 @@ import { gotoId, playPause } from './main'
 // import contentData from './showDate.json'
 import contentData  from "./showDateTest.json";
 
+
 // console.log('contentData =>')
 // ra -- start
 // console.log(contentData.contentData)
 // const thumb = contentData["imageThumb"]
 // console.log(thumb);
-
 
 // contentData.contentData.forEach(element => {
 //   element.isPriority = true;

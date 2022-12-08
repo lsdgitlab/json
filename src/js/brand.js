@@ -1,38 +1,11 @@
-// import request from 'request';
-// console.log(BigPicture);
 import BigPicture from 'bigpicture'
 import brandData from './brand-data.json'
-console.log('Brand Data =>', brandData);
-// import galdata from './wikipedia.js'
+console.log('Brand Data =>', brandData)
 
 window.addEventListener('DOMContentLoaded', () => {
   topheader(0)
-  bdrpDwnVal(brandData)
-  // console.log('The DOM Is Loaded');
-  brandData.forEach((el, idx) => {
-    // headerData(el)
-    // topheader(el)
-  })
-
-  // let loadMoreBtn = document.querySelector('.loadMoreSec')
-  // let currentItem = 3
-
-  // load more
-  // let loadMbtn = document.querySelector('.loadMoreSec button')
-  // let currItem = 3
-  // loadMbtn.addEventListener('click', () => {
-  //   let boxes = [...document.querySelectorAll('.filmes-card')]
-
-  //   for (var i = currItem; i < currItem + 3; i++) {
-  //     console.log(boxes[i])
-  //     // boxes[i].style.display = 'inline-block'
-  //   }
-
-  //   // currItem += 3
-  //   if (currItem >= boxes.length) {
-  //     loadMbtn.style.display = 'none'
-  //   }
-  // })
+  brandDrpDwn(brandData)
+  
 })
 
 function topheader(ele) {
@@ -52,87 +25,152 @@ function topheader(ele) {
   const smcCatcnt = document.querySelector('#smcSect .second-title span')
   smcCatcnt.innerHTML = '(' + brandData[ele].Category.length + ')'
 
-  let filcard = ''
-  brandData[ele].Film.forEach((item, indx) => {
-    filcard +=
-      '<div class="filmes-card">' +
-      '<div class="image-content">' +
-      '<img src="' +
-      item.filmTumb +
-      '" class="tumb" alt="">' +
-      '<div class="top-row">' +
-      '<div class="dimond">' +
-      '<img src="./img/king.png" alt="">' +
-      '</div>' +
-      '<div class="play-btn">' +
-      '<img src="./img/play-btn-small.png" alt="" class="youtube" ytSrc="' +
-      item.filmBig +
-      '">' +
-      '</div>' +
-      '</div>' +
-      '</div>' +
-      '<div class="title">' +
-      item.filmHashTag +
-      '</div>' +
-      '</div>'
+  let loadMbtn = document.querySelector('.loadMoreSec button')
+  loadMbtn.addEventListener('click', () => {
+    filmItemInx()
   })
-  filmSec.innerHTML = filcard;
-  // Load more
-  // let loadMbtn = document.querySelector('.loadMoreSec button')
-  // let currItem = 3
-  // loadMbtn.addEventListener('click', () => {
-  //   // let boxes = filcard
-  //   let boxes = [...document.querySelectorAll('.filmes-card')]
-  //   for (var i = currItem; i < currItem + 3; i++) {
-  //     // filmSec.innerHTML = boxes
-  //     console.log(boxes[i])
-  //     filmSec.innerHTML = boxes[i]
 
-  //     // console.log((filmSec.innerHTML = boxes[i]))
-  //     boxes[i].style.display = 'inline-block'
-  //   }
-  //   // currItem += 3
+  filmItemInx()
+  function filmItemInx() {
+    let filcard = filmSec.innerHTML
+    var filmIndx = document.querySelectorAll('#filmCont .filmes-card').length;
+    console.log(filmIndx);
 
-  //   if (currItem >= boxes.length) {
-  //     loadMbtn.style.display = 'none'
-  //   }
-  // })
+    for (var i = 0; i < 3; i++) {
+      var item = brandData[ele].Film[filmIndx]
 
-  const smcat = document.getElementById('cateOne')
-  let smc = ''
-  brandData[ele].Category.forEach((item) => {
-    smc +=
-      '<div class="filmes-card">' +
-      '<div class="image-content">' +
-      '<img src="' +
-      item.filmTumb +
-      '" class="tumb" alt="">' +
-      '<div class="top-row">' +
-      '<div class="dimond">' +
-      '<img src="./img/king.png" alt=""></div>' +
-      '<div class="play-btn"><img src="./img/play-btn-small.png" alt=""></div>' +
-      '</div>' +
-      '</div>' +
-      '<div class="title">' +
-      item.catHashTag +
-      '</div>' +
-      '</div>'
-  })
-  smcat.innerHTML = smc
+      filmIndx++
+      // console.log(filmIndx)
+      switch (item.type) {
+        case 'youtube':
+          filcard +=
+            '<div class="filmes-card">' +
+            '<div class="image-content">' +
+            '<img src="' +
+            item.filmTumb +
+            '" class="tumb" alt="">' +
+            '<div class="top-row">' +
+            '<div class="dimond">' +
+            '<img src="./img/king.png" alt="">' +
+            '</div>' +
+            '<div class="play-btn">' +
+            '<img src="./img/play-btn-small.png" alt="" class="youtube" ytSrc="' +item.filmBig +'">' +
+            '</div>' +
+            '</div>' +
+            '</div>' +
+            '<div class="title">' +
+            item.filmHashTag +
+            '</div>' +
+            '</div>'
+          break
+        case 'htmlvid':
+        default:
+          filcard +=
+            '<div class="filmes-card">' +
+            '<div class="image-content">' +
+            '<img src="' +
+            item.filmTumb +
+            '" class="tumb" alt="">' +
+            '<div class="top-row">' +
+            '<div class="dimond">' +
+            '<img src="./img/king.png" alt="">' +
+            '</div>' +
+            '<div class="play-btn">' +
+            '<img src="./img/play-btn-small.png" alt="" class="htmlvid" vidSrc="' +
+            item.filmBig +
+            '">' +
+            '</div>' +
+            '</div>' +
+            '</div>' +
+            '<div class="title">' +
+            item.filmHashTag +
+            '</div>' +
+            '</div>'
+          break
+      }
+
+      if (filmIndx >= brandData[ele].Film.length) {
+        loadMbtn.style.display = 'none'
+      }
+    }
+    filmSec.innerHTML = filcard
+  }
+
+const smcat = document.getElementById('cateOne')  
+// load more category
+const smcLoadM = document.getElementById('catLoadmore');
+smcLoadM.addEventListener('click', ()=>{
+  smcItemIdx()
+  console.log("ss");
+})
+
+
+smcItemIdx()
+function smcItemIdx(){
+  let smcCard = smcat.innerHTML;
+  var smcIndex = document.querySelectorAll('#smcSect .filmes-card').length; 
+  for(var n =0; n < 4; n++){
+    let item = brandData[ele].Category[smcIndex];
+    // console.log(item);
+    smcIndex++
+    switch(item.type){      
+      case 'youtube':
+        smcCard+= '<div class="filmes-card">' +
+        '<div class="image-content">' +
+        '<img src="' +
+        item.filmTumb +
+        '" class="tumb" alt="">' +
+        '<div class="top-row">' +
+        '<div class="dimond">' +
+        '<img src="./img/king.png" alt=""></div>' +
+        '<div class="play-btn"><img src="./img/play-btn-small.png" class="youtube" ytSrc="' +item.filmBig +'"></div>' +
+        '</div>' +
+        '<div class="title">' +
+        item.catHashTag +
+        '</div>' +
+        '</div>' +
+        '</div>'
+      break
+      case 'htmlvid' :
+       default:
+        smcCard+=
+        '<div class="filmes-card">' +
+        '<div class="image-content">' +
+        '<img src="' +
+        item.filmTumb +
+        '" class="tumb" alt="">' +
+        '<div class="top-row">' +
+        '<div class="dimond">' +
+        '<img src="./img/king.png" alt=""></div>' +
+        '<div class="play-btn"><img src="./img/play-btn-small.png" class="htmlvid" vidSrc="' + item.filmBig +'">' +
+        '</div>' +
+        '</div>' +
+        '<div class="title">' +
+        item.catHashTag +
+        '</div>' +
+        '</div>' +
+        '</div>'
+        
+    }
+    
+  }
+  smcat.innerHTML = smcCard
+}
+
+ 
 }
 // console.log()
 
-// use for search result
-const searchBtn = document.querySelector('#search button')
-const output = document.querySelector('.output')
+function brdrpdwn(oplist) {
+  let listDrpdwn = document.getElementById('brandName')
+  var listData = brandData[oplist].brandTitle
+  for (var i = 0; i > listData.length; i++) {}
+}
+
+
 let brDrpdwn = document.getElementById('brandName')
 
-// searchBtn.addEventListener('click', (e) => {
-//   bdrpDwnVal(brandData)
-//   // console.log('click', brandData)
-// })
-
-function bdrpDwnVal(brandData) {
+function brandDrpDwn(brandData) {
   brandData.forEach((el) => {
     var optn = document.createElement('option')
     // optn.value = el.brandTitle;
@@ -141,19 +179,7 @@ function bdrpDwnVal(brandData) {
     // let option = <option value=' + '${el.brandTitle}' + >' + '${el.brandTitle}' + '</option>'
     brDrpdwn.append(optn)
 
-    // output serach
-    // output.innerHTML += `
-    // <ul>
-    // <li> ${el.brandTitle}</li>
-    // <li> ${el.campaign}</li>
-    // <li> ${el.award}</li>
-    // <li> ${el.status}</li>
-    // </ul>`
   })
-}
-
-brDrpdwn.onchange = function (){
-  console.log("Select Test");
 }
 
 
@@ -182,6 +208,21 @@ brDrpdwn.onchange = function (){
         el: e.target,
         ytSrc: e.target.getAttribute('ytSrc'),
         dimensions: [1226, 900],
+      })
+    } else if (~className.indexOf('youtube')) {
+      console.log("click check");
+      BigPicture({
+        el: e.target,
+        ytSrc: e.target.getAttribute('ytSrc'),
+      })
+    }
+  });
+  setClickHandler('smcSect', function (e) {
+    var className = e.target.className
+    if (~className.indexOf('htmlvid')) {
+      BigPicture({
+        el: e.target,
+        vidSrc: e.target.getAttribute('vidSrc'),
       })
     } else if (~className.indexOf('youtube')) {
       console.log("click check");

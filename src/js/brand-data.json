@@ -5,129 +5,142 @@
       "campaign": "55",
       "award": "11",
       "Film": [
-         {
-            "FilmCount": "09",
-            "filmTumb": "../img/268x268.jpg",
-            "filmBig": "xqBb9Mh3Rkk",
-            "filmHashTag": "#Take Off1"
+         {          
+            "filmTumb": "./img/test-thumb-2.jpg",
+            "filmBig": "./video/mov_bbb.mp4",
+            "filmHashTag": "#Take Off1",
+            "type": "htmlvid"
          },
          {
             "FilmCount": "09",
-            "filmTumb": "../img/268x268.jpg",
+            "filmTumb": "../img/test-thumb-2.jpg",
             "filmBig": "assets/big.mp4",
             "filmHashTag": "#Take Off2"
          },{            
-            "filmTumb": "./img/banner1.jpg",
+            "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "X31W_-26d-E",
             "filmHashTag": "#Take Off1",
             "type": "youtube"
          },
          {
-            "filmTumb": "./img/banner1.jpg",
+            "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "QpK0z2kGlRs",
             "filmHashTag": "#Take Off2"
          },
          {
-            "filmTumb": "./img/banner1.jpg",
+            "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "DESJSNxhq8k",
             "filmHashTag": "#Take Off2"
          },
          {
-            "filmTumb": "./img/banner1.jpg",
+            "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "zM3rDvfx7Pg",
             "filmHashTag": "#Take Off2"
          },
          {
-            "filmTumb": "./img/banner1.jpg",
+            "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "assets/big.mp4",
             "filmHashTag": "#Take Off2"
          },
          {
-            "filmTumb": "./img/banner1.jpg",
+            "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "QpK0z2kGlRs",
             "filmHashTag": "#Take Off2"
          },
          {
-            "filmTumb": "./img/banner1.jpg",
+            "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "DESJSNxhq8k",
             "filmHashTag": "#Take Off2"
          },
          {
-            "filmTumb": "./img/banner1.jpg",
+            "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "zM3rDvfx7Pg",
             "filmHashTag": "#Take Off2"
          },
          {
-            "filmTumb": "./img/banner1.jpg",
+            "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "assets/big.mp4",
             "filmHashTag": "#Take Off2"
          },
          {
-            "filmTumb": "./img/banner1.jpg",
+            "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "QpK0z2kGlRs",
             "filmHashTag": "#Take Off2"
          },
          {
-            "filmTumb": "./img/banner1.jpg",
+            "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "DESJSNxhq8k",
             "filmHashTag": "#Take Off2"
          },
          {
-            "filmTumb": "./img/banner1.jpg",
+            "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "zM3rDvfx7Pg",
             "filmHashTag": "#Take Off2"
          },
          {
-            "filmTumb": "./img/banner1.jpg",
+            "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "assets/big.mp4",
             "filmHashTag": "#Take Off2"
          }
       ],
       "Category": [
          {
-            "filmTumb": "../img/268x268.jpg",
+            "filmTumb": "../img/banner1.jpg",
             "filmBig": "cjgaAnGCRuY",
-            "filmHashTag": "#Take Off1"
+            "catHashTag": "#Take Off1",
+            "type": "youtube"
          },
          {
-            "filmTumb": "../img/268x268.jpg",
-            "filmBig": "assets/big.mp4",
-            "filmHashTag": "#Take Off2"
-         },{            
+            "filmTumb": "../img/banner1.jpg",
+            "filmBig": "./video/mov_bbb.mp4",
+            "catHashTag": "#Take Off2",
+            "type": "htmlvid"
+         },
+         {            
             "filmTumb": "./img/banner1.jpg",
             "filmBig": "X31W_-26d-E",
-            "filmHashTag": "#Take Off1",
+            "catHashTag": "#Take Off1",
             "type": "youtube"
          },
          {
             "filmTumb": "./img/banner1.jpg",
             "filmBig": "QpK0z2kGlRs",
-            "filmHashTag": "#Take Off2"
+            "catHashTag": "#Take Off2",
+            "type": "youtube"
          },
          {
             "filmTumb": "./img/banner1.jpg",
             "filmBig": "DESJSNxhq8k",
-            "filmHashTag": "#Take Off2"
+            "catHashTag": "#Take Off2",
+            "type": "youtube"
          },
          {
             "filmTumb": "./img/banner1.jpg",
             "filmBig": "assets/big.mp4",
-            "filmHashTag": "#Take Off2"
+            "catHashTag": "#Take Off2",
+            "type": "htmlvid"
          },
          {
             "filmTumb": "./img/banner1.jpg",
             "filmBig": "assets/big.mp4",
-            "filmHashTag": "#Take Off2"
+            "catHashTag": "#Take Off2",
+            "type": "htmlvid"
+         },
+         {
+            "filmTumb": "./img/banner1.jpg",
+            "filmBig": "DESJSNxhq8k",
+            "catHashTag": "#Take Off2",
+            "type": "youtube"
          }
       ],
-      "SMCtitle": "Cate1",
-      "SMChashTag": "#Take Off",
+      
       "uiUxMainTitle": "Cate1",
-      "uiuxCount": 2,
+      "uiUxDesc": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet...",
       "uiUxsubTitle": "Canon",
       "uiUxCaseStUrl": "aaa.com",
       "uiUxWebUrl": "canon.com",
       "uiUxScreenshot": "assets/screenCanon.jpg",
+      
       "eOtheTitle": "Explore other brand work",
       "othLogo": "assets/thumb-24-06-22/bird.jpg",
       "status": true
