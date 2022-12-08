@@ -23,7 +23,10 @@ function topheader(ele) {
   const flmCnt = document.querySelector('#filmSec .second-title span')
   flmCnt.textContent = '(' + brandData[ele].Film.length + ')'
   const smcCatcnt = document.querySelector('#smcSect .second-title span')
-  smcCatcnt.innerHTML = '(' + brandData[ele].Category.length + ')'
+  smcCatcnt.innerHTML = '(' + brandData[ele].Category.length + ')';
+  const smcat = document.getElementById('cateOne')  
+  // load more category
+  const smcLoadM = document.querySelector('#catLoadmore button');
 
   let loadMbtn = document.querySelector('.loadMoreSec button')
   loadMbtn.addEventListener('click', () => {
@@ -96,12 +99,9 @@ function topheader(ele) {
     filmSec.innerHTML = filcard
   }
 
-const smcat = document.getElementById('cateOne')  
-// load more category
-const smcLoadM = document.getElementById('catLoadmore');
+
 smcLoadM.addEventListener('click', ()=>{
-  smcItemIdx()
-  console.log("ss");
+  smcItemIdx()  
 })
 
 
@@ -113,9 +113,11 @@ function smcItemIdx(){
     let item = brandData[ele].Category[smcIndex];
     // console.log(item);
     smcIndex++
-    switch(item.type){      
+
+    switch (item.type) {
       case 'youtube':
-        smcCard+= '<div class="filmes-card">' +
+        smcCard +=
+        '<div class="filmes-card">' +
         '<div class="image-content">' +
         '<img src="' +
         item.filmTumb +
@@ -130,10 +132,10 @@ function smcItemIdx(){
         '</div>' +
         '</div>' +
         '</div>'
-      break
-      case 'htmlvid' :
-       default:
-        smcCard+=
+        break
+      case 'htmlvid':
+      default:
+        smcCard +=
         '<div class="filmes-card">' +
         '<div class="image-content">' +
         '<img src="' +
@@ -150,8 +152,12 @@ function smcItemIdx(){
         '</div>' +
         '</div>' +
         '</div>'
+        break
         
     }
+    // if (smcIndex >= brandData[ele].Category.length) {
+    //   loadMbtn.style.display = 'none'
+    // }
     
   }
   smcat.innerHTML = smcCard
