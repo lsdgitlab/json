@@ -23,7 +23,9 @@ searchBtn.addEventListener('click', (e) => {
     })
 })
 
-function maker(testData) {}
+function maker(testData) {
+  
+}
 
 // Domain
 // onlinereviews.org.uk/

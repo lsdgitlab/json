@@ -23,6 +23,10 @@ const htmlPageNames = [
     {
         pageName: 'test.html',
         title: 'Test'
+    },
+    {
+        pageName: 'wikipedia.html',
+        title: 'Wikipedia'
     }, 
 ];
 // get the html page name

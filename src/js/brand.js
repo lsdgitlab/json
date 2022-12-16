@@ -305,3 +305,45 @@ var Youtube = (function () {
 var thumb = Youtube.thumb('http://www.youtube.com/watch?v=sjWmky2EAkU', 'big')
 
 console.log(thumb)
+
+// use for scroll nav
+// get all section Id defined
+const blocks = document.querySelectorAll('section[id]');
+const headerTop = document.querySelector('.brand-info-section').offsetHeight;;
+const navFx = document.querySelector('nav');
+const winscroll = window.scrollTop;
+console.log("Height", headerTop);
+
+window.addEventListener('scroll', navHighlight);
+
+navHighlight()
+
+function navHighlight(){
+  // get cuurent scroll position
+  let scrollY = window.pageYOffset;
+
+  if(scrollY > 300 ){
+    navFx.classList.add('fixed')
+  }else{
+    navFx.classList.remove('fixed')
+  }
+
+  blocks.forEach( current =>{
+    const secHeight = current.offsetHeight;
+    const secTop = current.offsetTop - 276;
+    const secId = current.getAttribute("id")
+    // console.log("Id =>",secId); 
+
+    if(scrollY > secTop && scrollY <= secTop + secHeight){
+      document.querySelector('.sticky-nav .container a[href*='+ secId +']').classList.add('active')
+      
+    }else{
+      document.querySelector('.sticky-nav a[href*='+ secId +']').classList.remove('active')
+    }
+
+  })
+
+}
+
+
+const block = document.querySelector('.sectn')
