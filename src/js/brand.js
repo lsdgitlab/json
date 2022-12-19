@@ -6,18 +6,39 @@ window.addEventListener('DOMContentLoaded', () => {
   topheader(0)
   brandDrpDwn(brandData)
   uCat(0)
+
+  brDrpdwn.addEventListener('change', function () {
+    topheader(this.selectedIndex)
+    uCat(this.selectedIndex)
+    console.log('SELECTED iNDEX', this.selectedIndex)
+  })
 })
 
-function topheader(ele) {
+let brDrpdwn = document.getElementById('brandName')
+
+function brandDrpDwn(brandData) {
+  brandData.forEach((el) => {
+    var optn = document.createElement('option')
+    optn.value = `${el.brandTitle}`
+    optn.text = `${el.brandTitle}`
+    brDrpdwn.append(optn)
+  })
+}
+
+function topheader(ele, idx) {
   const brdLogoImg = document.querySelector('.media-logo img')
   brdLogoImg.setAttribute('src', brandData[ele].brandLogo)
   const bradTtl = document.querySelector('.item-title')
   bradTtl.textContent = brandData[ele].brandTitle
+
   const campaigns = document.querySelector('.item-logo span b')
   campaigns.textContent = brandData[ele].campaign
   const awd = document.querySelector('.awd')
   awd.textContent = brandData[ele].award + ' Awads'
-
+  // window.history.pushState(
+  //   { pageTitle: brandData[ele].brandTitle },'',
+  //   brandData[ele].alias
+  // )
   const filmSec = document.getElementById('filmCont')
   // console.log(filmSec)
   const flmCnt = document.querySelector('#filmSec .second-title span')
@@ -173,19 +194,6 @@ function brdrpdwn(oplist) {
   for (var i = 0; i > listData.length; i++) {}
 }
 
-let brDrpdwn = document.getElementById('brandName')
-
-function brandDrpDwn(brandData) {
-  brandData.forEach((el) => {
-    var optn = document.createElement('option')
-    // optn.value = el.brandTitle;
-    optn.value = `${el.brandTitle}`
-    optn.text = `${el.brandTitle}`
-    // let option = <option value=' + '${el.brandTitle}' + >' + '${el.brandTitle}' + '</option>'
-    brDrpdwn.append(optn)
-  })
-}
-
 // use for UCATE
 
 const uCatSec = document.getElementById('uCategory')
@@ -308,42 +316,44 @@ console.log(thumb)
 
 // use for scroll nav
 // get all section Id defined
-const blocks = document.querySelectorAll('section[id]');
-const headerTop = document.querySelector('.brand-info-section').offsetHeight;;
-const navFx = document.querySelector('nav');
-const winscroll = window.scrollTop;
-console.log("Height", headerTop);
+const blocks = document.querySelectorAll('section[id]')
+const headerTop = document.querySelector('.brand-info-section').offsetHeight
+const navFx = document.querySelector('nav')
+const winscroll = window.scrollTop
+console.log('Height', headerTop)
 
-window.addEventListener('scroll', navHighlight);
+window.addEventListener('scroll', navHighlight)
 
 navHighlight()
 
-function navHighlight(){
+function navHighlight() {
   // get cuurent scroll position
-  let scrollY = window.pageYOffset;
+  let scrollY = window.pageYOffset
 
-  if(scrollY > 300 ){
+  if (scrollY > 300) {
     navFx.classList.add('fixed')
-  }else{
+  } else {
     navFx.classList.remove('fixed')
   }
 
-  blocks.forEach( current =>{
-    const secHeight = current.offsetHeight;
-    const secTop = current.offsetTop - 276;
-    const secId = current.getAttribute("id")
-    // console.log("Id =>",secId); 
+  blocks.forEach((current) => {
+    const secHeight = current.offsetHeight
+    const secTop = current.offsetTop - 276
+    const secId = current.getAttribute('id')
+    // console.log("Id =>",secId);
 
-    if(scrollY > secTop && scrollY <= secTop + secHeight){
-      document.querySelector('.sticky-nav .container a[href*='+ secId +']').classList.add('active')
-      
-    }else{
-      document.querySelector('.sticky-nav a[href*='+ secId +']').classList.remove('active')
+    if (scrollY > secTop && scrollY <= secTop + secHeight) {
+      document
+        .querySelector('.sticky-nav .container a[href*=' + secId + ']')
+        .classList.add('active')
+    } else {
+      document
+        .querySelector('.sticky-nav a[href*=' + secId + ']')
+        .classList.remove('active')
     }
-
   })
-
 }
 
+// const block = document.querySelector('.sectn')
 
-const block = document.querySelector('.sectn')
+//history push in webpack, custom url in webpack es6

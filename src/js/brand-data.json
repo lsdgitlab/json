@@ -1,22 +1,22 @@
 [
    {
       "brandTitle": "iffco-tokio-general",
+      "alias":"iffco-tokio-general",
       "brandLogo": "../img/client-logo/EY.jpg",
-      "campaign": "55",
-      "award": "11",
       "Film": [
          {          
             "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "./video/mov_bbb.mp4",
-            "filmHashTag": "#Take Off1",
+            "filmHashTag": "#iffco-tokio1",
             "type": "htmlvid"
          },
          {
-            "FilmCount": "09",
             "filmTumb": "../img/test-thumb-2.jpg",
             "filmBig": "assets/big.mp4",
-            "filmHashTag": "#Take Off2"
-         },{            
+            "filmHashTag": "#iffco-tokio-general",
+            "type": "htmlvid"
+         },
+         {            
             "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "X31W_-26d-E",
             "filmHashTag": "#Take Off1",
@@ -25,69 +25,81 @@
          {
             "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "QpK0z2kGlRs",
-            "filmHashTag": "#Take Off2"
+            "filmHashTag": "#Take Off2",
+            "type": "youtube"
          },
          {
             "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "DESJSNxhq8k",
-            "filmHashTag": "#Take Off2"
+            "filmHashTag": "#Take Off2",
+            "type": "youtube"
          },
          {
             "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "zM3rDvfx7Pg",
-            "filmHashTag": "#Take Off2"
+            "filmHashTag": "#Take Off2",
+            "type": "youtube"
          },
          {
             "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "assets/big.mp4",
-            "filmHashTag": "#Take Off2"
+            "filmHashTag": "#Take Off2",
+            "type": "htmlvid"
          },
          {
             "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "QpK0z2kGlRs",
-            "filmHashTag": "#Take Off2"
+            "filmHashTag": "#Take Off2",
+            "type": "youtube"
          },
          {
             "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "DESJSNxhq8k",
-            "filmHashTag": "#Take Off2"
+            "filmHashTag": "#Take Off2",
+            "type": "youtube"
          },
          {
             "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "zM3rDvfx7Pg",
-            "filmHashTag": "#Take Off2"
+            "filmHashTag": "#Take Off2",
+            "type": "youtube"
          },
          {
             "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "assets/big.mp4",
-            "filmHashTag": "#Take Off2"
+            "filmHashTag": "#Take Off2",
+            "type": "htmlvid"
          },
          {
             "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "QpK0z2kGlRs",
-            "filmHashTag": "#Take Off2"
+            "filmHashTag": "#Take Off2",
+            "type": "youtube"
          },
          {
             "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "DESJSNxhq8k",
-            "filmHashTag": "#Take Off2"
+            "filmHashTag": "#Take Off2",
+            "type": "youtube"
          },
          {
             "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "zM3rDvfx7Pg",
-            "filmHashTag": "#Take Off2"
+            "filmHashTag": "#Take Off2",
+            "type": "youtube"
          },
          {
             "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "assets/big.mp4",
-            "filmHashTag": "#Take Off2"
+            "filmHashTag": "#Take Off2",
+            "type": "htmlvid"
          }
       ],
       "Category": [
          {
             "filmTumb": "../img/banner1.jpg",
             "filmBig": "cjgaAnGCRuY",
-            "catHashTag": "#Take Off1",
+            "catHashTag": "#iffco-tokio-general1",
             "type": "youtube"
          },
          {
@@ -135,7 +147,7 @@
       ],
       "uCate": [
          {
-            "uCateMainTitle": "Cate1",
+            "uCateMainTitle": "iffco-tokio-general",
             "uCateDesc": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet...",
             "uCatesubTitle": "Canon",
             "uCateCaseStUrl": "aaa.com",
@@ -149,56 +161,70 @@
             "uCateCaseStUrl": "aaa.com",
             "uCateWebUrl": "canon.com",
             "uCateScreenshot": "img/brand-images/shutterstock_1037565193.jpg"
+         },
+         {
+            "uCateMainTitle": "Cate3",
+            "uCateDesc": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet...",
+            "uCatesubTitle": "Canon",
+            "uCateCaseStUrl": "aaa.com",
+            "uCateWebUrl": "canon.com",
+            "uCateScreenshot": "img/brand-images/shutterstock_1125178382.jpg"
          }
          
-      ]
-      
+      ],
+      "SMCtitle": "Cate4",
+      "SMChashTag": "#Take Off",
+      "uCateMainTitle": "UI & UX",
+      "uCateCount": 2,      
+      "status": true
    },
    {
       "brandTitle": "HDFC Life",
-      "brandLogo": "../img/aegon-life-insurance.webp",
-      "campaign": 43,
-      "award": 5,
-      "flmTitle": "Film",
-      "FilmCount": "09",
+      "alias":"HDFC-Life",
+      "brandLogo": "../img/client-logo/HDFC.jpg",
       "Film": [
          {            
-            "filmTumb": "./img/banner1.jpg",
+            "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "X31W_-26d-E",
-            "filmHashTag": "#Take Off1",
+            "filmHashTag": "#HDFC Life1",
             "type": "youtube"
          },
          {
-            "filmTumb": "./img/banner1.jpg",
+            "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "QpK0z2kGlRs",
-            "filmHashTag": "#Take Off2"
+            "filmHashTag": "#Take Off2",
+            "type": "youtube"
          },
          {
-            "filmTumb": "./img/banner1.jpg",
+            "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "DESJSNxhq8k",
-            "filmHashTag": "#Take Off2"
+            "filmHashTag": "#Take Off2",
+            "type": "youtube"
          },
          {
-            "filmTumb": "./img/banner1.jpg",
+            "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "assets/big.mp4",
-            "filmHashTag": "#Take Off2"
+            "filmHashTag": "#Take Off2",
+            "type": "htmlvid"
          },
          {
-            "filmTumb": "./img/banner1.jpg",
+            "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "assets/big.mp4",
-            "filmHashTag": "#Take Off2"
+            "filmHashTag": "#Take Off2",
+            "type": "htmlvid"
          },
          {
-            "filmTumb": "./img/banner1.jpg",
+            "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "l5kpmVTPXFw",
-            "filmHashTag": "#Take Off2"
+            "filmHashTag": "#Take Off2",
+            "type": "youtube"
          }
       ],
       "Category": [
          {
             "filmTumb": "../img/banner1.jpg",
             "filmBig": "cjgaAnGCRuY",
-            "catHashTag": "#Take Off1",
+            "catHashTag": "#HDFC Life",
             "type": "youtube"
          },
          {
@@ -246,7 +272,7 @@
       ],
       "uCate": [
          {
-            "uCateMainTitle": "Cate3",
+            "uCateMainTitle": "HDFC Life",
             "uCateDesc": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet...",
             "uCatesubTitle": "Canon",
             "uCateCaseStUrl": "aaa.com",
@@ -266,61 +292,56 @@
       "SMCtitle": "Cate4",
       "SMChashTag": "#Take Off",
       "uCateMainTitle": "UI & UX",
-      "uCateCount": 2,
-      "uCatesubTitle": "Canon",
-      "uCateDesc":"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet",
-      "uCateCaseStUrl": "aaa.com",
-      "uCateWebUrl": "canon.com",
-      "uCateScreenshot": "assets/screenCanon.jpg",
-      "eOtheTitle": "Explore other brand work",
-      "othLogo": "assets/thumb-24-06-22/bird.jpg",
+      "uCateCount": 2,      
       "status": true
    },
    {
       "brandTitle": "Canon India",
-      "brandLogo": "../img/aegon-life-insurance.webp",
-      "campaign": 43,
-      "award": 5,
-      "flmTitle": "Film",
-      "FilmCount": "09",
+      "alias":"Canon-India",
+      "brandLogo": "../img/client-logo/kpmg.jpg",
       "Film": [
          {            
-            "filmTumb": "./img/banner1.jpg",
+            "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "X31W_-26d-E",
-            "filmHashTag": "#Take Off1",
+            "filmHashTag": "#Canon India",
             "type": "youtube"
          },
          {
-            "filmTumb": "./img/banner1.jpg",
+            "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "QpK0z2kGlRs",
-            "filmHashTag": "#Take Off2"
+            "filmHashTag": "#Take Off2",
+            "type": "youtube"
          },
          {
-            "filmTumb": "./img/banner1.jpg",
+            "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "DESJSNxhq8k",
-            "filmHashTag": "#Take Off2"
+            "filmHashTag": "#Take Off2",
+            "type": "youtube"
          },
          {
-            "filmTumb": "./img/banner1.jpg",
+            "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "assets/big.mp4",
-            "filmHashTag": "#Take Off2"
+            "filmHashTag": "#Take Off2",
+            "type": "htmlvid"
          },
          {
-            "filmTumb": "./img/banner1.jpg",
+            "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "assets/big.mp4",
-            "filmHashTag": "#Take Off2"
+            "filmHashTag": "#Take Off2",
+            "type": "htmlvid"
          },
          {
-            "filmTumb": "./img/banner1.jpg",
+            "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "l5kpmVTPXFw",
-            "filmHashTag": "#Take Off2"
+            "filmHashTag": "#Take Off2",
+            "type": "youtube"
          }
       ],
       "Category": [
          {
             "filmTumb": "../img/banner1.jpg",
             "filmBig": "cjgaAnGCRuY",
-            "catHashTag": "#Take Off1",
+            "catHashTag": "#Canon India",
             "type": "youtube"
          },
          {
@@ -368,7 +389,7 @@
       ],
       "uCate": [
          {
-            "uCateMainTitle": "Cate5",
+            "uCateMainTitle": "Canon India",
             "uCateDesc": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet...",
             "uCatesubTitle": "Canon",
             "uCateCaseStUrl": "aaa.com",
@@ -385,14 +406,10 @@
          }
          
       ],
-      "SMCtitle": "Cate2",
+      "SMCtitle": "Cate4",
       "SMChashTag": "#Take Off",
       "uCateMainTitle": "UI & UX",
-      "uCateCount": 2,
-      "uCatesubTitle": "Canon",
-      "uCateDesc":"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet",
-      "uCateCaseStUrl": "aaa.com",
-      "uCateWebUrl": "canon.com",
-      "uCateScreenshot": "img/brand-images/shutterstock_1037565193.jpg"
+      "uCateCount": 2,      
+      "status": true
    }
    ]
