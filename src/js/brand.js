@@ -46,9 +46,7 @@ function topheader(ele, idx) {
   const smcCatcnt = document.querySelector('#smcSect .second-title span')
   smcCatcnt.innerHTML = '(' + brandData[ele].Category.length + ')'
   const smcat = document.getElementById('cateOne')
-  // load more category
-  const smcLoadM = document.querySelector('#catLoadmore button')
-
+ 
   let loadMbtn = document.querySelector('.loadMoreSec button')
   loadMbtn.addEventListener('click', () => {
     filmItemInx()
@@ -58,7 +56,7 @@ function topheader(ele, idx) {
   function filmItemInx() {
     let filcard = filmSec.innerHTML
     var filmIndx = document.querySelectorAll('#filmCont .filmes-card').length
-    console.log(filmIndx)
+    // console.log(filmIndx)
 
     for (var i = 0; i < 3; i++) {
       var item = brandData[ele].Film[filmIndx]
@@ -122,10 +120,12 @@ function topheader(ele, idx) {
     filmSec.innerHTML = filcard
   }
 
+   // load more category
+   const smcLoadM = document.querySelector('#catLoadmore button')
   smcLoadM.addEventListener('click', () => {
     smcItemIdx()
   })
-
+console.log("Category =>",brandData[ele].Category.length);
   smcItemIdx()
   function smcItemIdx() {
     let smcCard = smcat.innerHTML
@@ -179,9 +179,9 @@ function topheader(ele, idx) {
             '</div>'
           break
       }
-      // if (smcIndex >= brandData[ele].Category.length) {
-      //   loadMbtn.style.display = 'none'
-      // }
+      if (smcIndex >= brandData[ele].Category.length) {
+        smcLoadM.style.display = 'none'
+      }
     }
     smcat.innerHTML = smcCard
   }
@@ -204,7 +204,7 @@ ucatCount.textContent = '(' + brandData[0].uCate.length + ')'
 function uCat(el) {
   let uCat = ''
   brandData[el].uCate.forEach((item, idx) => {
-    console.log('UCat =>', item.uCateMainTitle)
+    // console.log('UCat =>', item.uCateMainTitle)
     uCat +=
       '<div class="item">' +
       '<div class="art-card">' +

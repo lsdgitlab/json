@@ -11,7 +11,7 @@ import galdata from './wikipedia.js';
 
 import { gotoId, playPause } from './main'
 // import contentData from './showDate.json'
-import contentData  from "./showDateTest.json";
+// import contentData  from "./showDateTest.json";
 
 
 // console.log('contentData =>')

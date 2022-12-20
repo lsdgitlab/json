@@ -12,7 +12,7 @@
          },
          {
             "filmTumb": "../img/test-thumb-2.jpg",
-            "filmBig": "assets/big.mp4",
+            "filmBig": "./video/mov_bbb.mp4",
             "filmHashTag": "#iffco-tokio-general",
             "type": "htmlvid"
          },
@@ -42,7 +42,7 @@
          },
          {
             "filmTumb": "./img/test-thumb-2.jpg",
-            "filmBig": "assets/big.mp4",
+            "filmBig": "./video/mov_bbb.mp4",
             "filmHashTag": "#Take Off2",
             "type": "htmlvid"
          },
@@ -66,7 +66,7 @@
          },
          {
             "filmTumb": "./img/test-thumb-2.jpg",
-            "filmBig": "assets/big.mp4",
+            "filmBig": "./video/mov_bbb.mp4",
             "filmHashTag": "#Take Off2",
             "type": "htmlvid"
          },
@@ -90,7 +90,7 @@
          },
          {
             "filmTumb": "./img/test-thumb-2.jpg",
-            "filmBig": "assets/big.mp4",
+            "filmBig": "./video/mov_bbb.mp4",
             "filmHashTag": "#Take Off2",
             "type": "htmlvid"
          }
@@ -128,13 +128,25 @@
          },
          {
             "filmTumb": "./img/banner1.jpg",
-            "filmBig": "assets/big.mp4",
+            "filmBig": "./video/mov_bbb.mp4",
             "catHashTag": "#Take Off2",
             "type": "htmlvid"
          },
          {
             "filmTumb": "./img/banner1.jpg",
-            "filmBig": "assets/big.mp4",
+            "filmBig": "./video/mov_bbb.mp4",
+            "catHashTag": "#Take Off2",
+            "type": "htmlvid"
+         },
+         {
+            "filmTumb": "./img/banner1.jpg",
+            "filmBig": "DESJSNxhq8k",
+            "catHashTag": "#Take Off2",
+            "type": "youtube"
+         },
+         {
+            "filmTumb": "./img/banner1.jpg",
+            "filmBig": "./video/mov_bbb.mp4",
             "catHashTag": "#Take Off2",
             "type": "htmlvid"
          },
@@ -183,48 +195,31 @@
       "alias":"HDFC-Life",
       "brandLogo": "../img/client-logo/HDFC.jpg",
       "Film": [
+         {          
+            "filmTumb": "./img/test-thumb-2.jpg",
+            "filmBig": "./video/mov_bbb.mp4",
+            "filmHashTag": "#HDFC Life",
+            "type": "htmlvid"
+         },
+         {
+            "filmTumb": "../img/test-thumb-2.jpg",
+            "filmBig": "./video/mov_bbb.mp4",
+            "filmHashTag": "#HDFC Life 1",
+            "type": "htmlvid"
+         },
          {            
             "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "X31W_-26d-E",
-            "filmHashTag": "#HDFC Life1",
-            "type": "youtube"
-         },
-         {
-            "filmTumb": "./img/test-thumb-2.jpg",
-            "filmBig": "QpK0z2kGlRs",
-            "filmHashTag": "#Take Off2",
-            "type": "youtube"
-         },
-         {
-            "filmTumb": "./img/test-thumb-2.jpg",
-            "filmBig": "DESJSNxhq8k",
-            "filmHashTag": "#Take Off2",
-            "type": "youtube"
-         },
-         {
-            "filmTumb": "./img/test-thumb-2.jpg",
-            "filmBig": "assets/big.mp4",
-            "filmHashTag": "#Take Off2",
-            "type": "htmlvid"
-         },
-         {
-            "filmTumb": "./img/test-thumb-2.jpg",
-            "filmBig": "assets/big.mp4",
-            "filmHashTag": "#Take Off2",
-            "type": "htmlvid"
-         },
-         {
-            "filmTumb": "./img/test-thumb-2.jpg",
-            "filmBig": "l5kpmVTPXFw",
-            "filmHashTag": "#Take Off2",
+            "filmHashTag": "#Take Off1",
             "type": "youtube"
          }
+         
       ],
       "Category": [
          {
             "filmTumb": "../img/banner1.jpg",
             "filmBig": "cjgaAnGCRuY",
-            "catHashTag": "#HDFC Life",
+            "catHashTag": "#iffco-tokio-general1",
             "type": "youtube"
          },
          {
@@ -240,34 +235,16 @@
             "type": "youtube"
          },
          {
-            "filmTumb": "./img/banner1.jpg",
-            "filmBig": "QpK0z2kGlRs",
-            "catHashTag": "#Take Off2",
+            "filmTumb": "../img/banner1.jpg",
+            "filmBig": "cjgaAnGCRuY",
+            "catHashTag": "#iffco-tokio-general1",
             "type": "youtube"
          },
          {
-            "filmTumb": "./img/banner1.jpg",
-            "filmBig": "DESJSNxhq8k",
-            "catHashTag": "#Take Off2",
-            "type": "youtube"
-         },
-         {
-            "filmTumb": "./img/banner1.jpg",
-            "filmBig": "assets/big.mp4",
+            "filmTumb": "../img/banner1.jpg",
+            "filmBig": "./video/mov_bbb.mp4",
             "catHashTag": "#Take Off2",
             "type": "htmlvid"
-         },
-         {
-            "filmTumb": "./img/banner1.jpg",
-            "filmBig": "assets/big.mp4",
-            "catHashTag": "#Take Off2",
-            "type": "htmlvid"
-         },
-         {
-            "filmTumb": "./img/banner1.jpg",
-            "filmBig": "DESJSNxhq8k",
-            "catHashTag": "#Take Off2",
-            "type": "youtube"
          }
       ],
       "uCate": [
@@ -300,48 +277,43 @@
       "alias":"Canon-India",
       "brandLogo": "../img/client-logo/kpmg.jpg",
       "Film": [
+         {          
+            "filmTumb": "./img/test-thumb-2.jpg",
+            "filmBig": "./video/mov_bbb.mp4",
+            "filmHashTag": "#Canon India",
+            "type": "htmlvid"
+         },
+         {
+            "filmTumb": "../img/test-thumb-2.jpg",
+            "filmBig": "./video/mov_bbb.mp4",
+            "filmHashTag": "#Canon India1",
+            "type": "htmlvid"
+         },
          {            
             "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "X31W_-26d-E",
-            "filmHashTag": "#Canon India",
+            "filmHashTag": "#Take Off1",
             "type": "youtube"
          },
          {
-            "filmTumb": "./img/test-thumb-2.jpg",
-            "filmBig": "QpK0z2kGlRs",
-            "filmHashTag": "#Take Off2",
-            "type": "youtube"
-         },
-         {
-            "filmTumb": "./img/test-thumb-2.jpg",
-            "filmBig": "DESJSNxhq8k",
-            "filmHashTag": "#Take Off2",
-            "type": "youtube"
-         },
-         {
-            "filmTumb": "./img/test-thumb-2.jpg",
-            "filmBig": "assets/big.mp4",
-            "filmHashTag": "#Take Off2",
+            "filmTumb": "../img/test-thumb-2.jpg",
+            "filmBig": "./video/mov_bbb.mp4",
+            "filmHashTag": "#Canon India1",
             "type": "htmlvid"
          },
-         {
+         {            
             "filmTumb": "./img/test-thumb-2.jpg",
-            "filmBig": "assets/big.mp4",
-            "filmHashTag": "#Take Off2",
-            "type": "htmlvid"
-         },
-         {
-            "filmTumb": "./img/test-thumb-2.jpg",
-            "filmBig": "l5kpmVTPXFw",
-            "filmHashTag": "#Take Off2",
+            "filmBig": "X31W_-26d-E",
+            "filmHashTag": "#Take Off1",
             "type": "youtube"
          }
+        
       ],
       "Category": [
          {
             "filmTumb": "../img/banner1.jpg",
             "filmBig": "cjgaAnGCRuY",
-            "catHashTag": "#Canon India",
+            "catHashTag": "#iffco-tokio-general1",
             "type": "youtube"
          },
          {
@@ -355,36 +327,6 @@
             "filmBig": "X31W_-26d-E",
             "catHashTag": "#Take Off1",
             "type": "youtube"
-         },
-         {
-            "filmTumb": "./img/banner1.jpg",
-            "filmBig": "QpK0z2kGlRs",
-            "catHashTag": "#Take Off2",
-            "type": "youtube"
-         },
-         {
-            "filmTumb": "./img/banner1.jpg",
-            "filmBig": "DESJSNxhq8k",
-            "catHashTag": "#Take Off2",
-            "type": "youtube"
-         },
-         {
-            "filmTumb": "./img/banner1.jpg",
-            "filmBig": "assets/big.mp4",
-            "catHashTag": "#Take Off2",
-            "type": "htmlvid"
-         },
-         {
-            "filmTumb": "./img/banner1.jpg",
-            "filmBig": "assets/big.mp4",
-            "catHashTag": "#Take Off2",
-            "type": "htmlvid"
-         },
-         {
-            "filmTumb": "./img/banner1.jpg",
-            "filmBig": "DESJSNxhq8k",
-            "catHashTag": "#Take Off2",
-            "type": "youtube"
          }
       ],
       "uCate": [
@@ -394,7 +336,7 @@
             "uCatesubTitle": "Canon",
             "uCateCaseStUrl": "aaa.com",
             "uCateWebUrl": "canon.com",
-            "uCateScreenshot": "img/brand-images/shutterstock_1081663559shutterstock_1037565193.jpg"
+            "uCateScreenshot": "img/brand-images/shutterstock_1014796606.jpg"
          },
          {
             "uCateMainTitle": "Cate6",
