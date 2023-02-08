@@ -4,7 +4,9 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel';
 import  '../css/sass/index.scss';
 import lozad from 'lozad';
-import './brand.js';
+import './brand-new';
+// import './brand.js';
+
 // import './wikipedia.js';
 // var modernizr = require("modernizr");
 // // .js

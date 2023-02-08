@@ -8,9 +8,13 @@ window.addEventListener('DOMContentLoaded', () => {
   uCat(0)
 
   brDrpdwn.addEventListener('change', function () {
+    document.getElementById('filmCont').innerHTML = ''
+    document.getElementById('cateOne').innerHTML = ''
+    document.getElementById('uCategory').innerHTML = ''
+    document.querySelector('.loadMoreSec button').style.display = 'block'
     topheader(this.selectedIndex)
     uCat(this.selectedIndex)
-    console.log('SELECTED iNDEX', this.selectedIndex)
+    console.log('thumb11', this.selectedIndex)
   })
 })
 
@@ -39,14 +43,15 @@ function topheader(ele, idx) {
   //   { pageTitle: brandData[ele].brandTitle },'',
   //   brandData[ele].alias
   // )
-  const filmSec = document.getElementById('filmCont')
-  // console.log(filmSec)
-  const flmCnt = document.querySelector('#filmSec .second-title span')
-  flmCnt.textContent = '(' + brandData[ele].Film.length + ')'
-  const smcCatcnt = document.querySelector('#smcSect .second-title span')
+  let filmSec = document.getElementById('filmCont')
+  // debugger
+  let flmCnt = document.querySelector('#filmSec .second-title span')
+  flmCnt.innerHTML = '(' + brandData[ele].Film.length + ')'
+  console.log(' FILM Lenghth cnt', brandData[ele].Film.length)
+  let smcCatcnt = document.querySelector('#smcSect .second-title span')
   smcCatcnt.innerHTML = '(' + brandData[ele].Category.length + ')'
-  const smcat = document.getElementById('cateOne')
- 
+  let smcat = document.getElementById('cateOne')
+
   let loadMbtn = document.querySelector('.loadMoreSec button')
   loadMbtn.addEventListener('click', () => {
     filmItemInx()
@@ -62,6 +67,10 @@ function topheader(ele, idx) {
       var item = brandData[ele].Film[filmIndx]
 
       filmIndx++
+      if (item == undefined) {
+        break
+      }
+
       // console.log(filmIndx)
       switch (item.type) {
         case 'youtube':
@@ -120,71 +129,73 @@ function topheader(ele, idx) {
     filmSec.innerHTML = filcard
   }
 
-   // load more category
-   const smcLoadM = document.querySelector('#catLoadmore button')
+  // load more category
+  const smcLoadM = document.querySelector('#catLoadmore button')
   smcLoadM.addEventListener('click', () => {
     smcItemIdx()
   })
-console.log("Category =>",brandData[ele].Category.length);
-  smcItemIdx()
-  function smcItemIdx() {
-    let smcCard = smcat.innerHTML
-    var smcIndex = document.querySelectorAll('#smcSect .filmes-card').length
-    for (var n = 0; n < 4; n++) {
-      let item = brandData[ele].Category[smcIndex]
-      // console.log(item);
-      smcIndex++
-
-      switch (item.type) {
-        case 'youtube':
-          smcCard +=
-            '<div class="filmes-card">' +
-            '<div class="image-content">' +
-            '<img src="' +
-            item.filmTumb +
-            '" class="tumb" alt="">' +
-            '<div class="top-row">' +
-            '<div class="dimond">' +
-            '<img src="./img/king.png" alt=""></div>' +
-            '<div class="play-btn"><img src="./img/play-btn-small.png" class="youtube" ytSrc="' +
-            item.filmBig +
-            '"></div>' +
-            '</div>' +
-            '<div class="title">' +
-            item.catHashTag +
-            '</div>' +
-            '</div>' +
-            '</div>'
-          break
-        case 'htmlvid':
-        default:
-          smcCard +=
-            '<div class="filmes-card">' +
-            '<div class="image-content">' +
-            '<img src="' +
-            item.filmTumb +
-            '" class="tumb" alt="">' +
-            '<div class="top-row">' +
-            '<div class="dimond">' +
-            '<img src="./img/king.png" alt=""></div>' +
-            '<div class="play-btn"><img src="./img/play-btn-small.png" class="htmlvid" vidSrc="' +
-            item.filmBig +
-            '">' +
-            '</div>' +
-            '</div>' +
-            '<div class="title">' +
-            item.catHashTag +
-            '</div>' +
-            '</div>' +
-            '</div>'
-          break
-      }
-      if (smcIndex >= brandData[ele].Category.length) {
-        smcLoadM.style.display = 'none'
-      }
+  console.log('Category =>', brandData[ele].Category.length)
+}
+smcItemIdx()
+function smcItemIdx() {
+  let smcCard = smcat.innerHTML
+  var smcIndex = document.querySelectorAll('#smcSect .filmes-card').length
+  for (var n = 0; n < 4; n++) {
+    let item = brandData[ele].Category[smcIndex]
+    // console.log(item);
+    smcIndex++
+    if (item == undefined) {
+      break
     }
-    smcat.innerHTML = smcCard
+    switch (item.type) {
+      case 'youtube':
+        smcCard +=
+          '<div class="filmes-card">' +
+          '<div class="image-content">' +
+          '<img src="' +
+          item.filmTumb +
+          '" class="tumb" alt="">' +
+          '<div class="top-row">' +
+          '<div class="dimond">' +
+          '<img src="./img/king.png" alt=""></div>' +
+          '<div class="play-btn"><img src="./img/play-btn-small.png" class="youtube" ytSrc="' +
+          item.filmBig +
+          '"></div>' +
+          '</div>' +
+          '<div class="title">' +
+          item.catHashTag +
+          '</div>' +
+          '</div>' +
+          '</div>'
+        break
+      case 'htmlvid':
+      default:
+        smcCard +=
+          '<div class="filmes-card">' +
+          '<div class="image-content">' +
+          '<img src="' +
+          item.filmTumb +
+          '" class="tumb" alt="">' +
+          '<div class="top-row">' +
+          '<div class="dimond">' +
+          '<img src="./img/king.png" alt=""></div>' +
+          '<div class="play-btn"><img src="./img/play-btn-small.png" class="htmlvid" vidSrc="' +
+          item.filmBig +
+          '">' +
+          '</div>' +
+          '</div>' +
+          '<div class="title">' +
+          item.catHashTag +
+          '</div>' +
+          '</div>' +
+          '</div>'
+        break
+    }
+    if (smcIndex >= brandData[ele].Category.length) {
+      smcLoadM.style.display = 'none'
+    }
   }
+  smcat.innerHTML = smcCard
 }
 // console.log()
 
@@ -196,12 +207,13 @@ function brdrpdwn(oplist) {
 
 // use for UCATE
 
-const uCatSec = document.getElementById('uCategory')
-const ucatCount = document.querySelector('.ui-ux-section .second-title span')
-console.log(brandData[0].uCate.length)
-ucatCount.textContent = '(' + brandData[0].uCate.length + ')'
+// const uCatSec = document.getElementById('uCategory')
 
 function uCat(el) {
+  const uCatSec = document.getElementById('uCategory')
+  const ucatCount = document.querySelector('#uCate .second-title span')
+  console.log('UCAT', brandData[el].uCate.length)
+  ucatCount.innerHTML = '(' + brandData[el].uCate.length + ')'
   let uCat = ''
   brandData[el].uCate.forEach((item, idx) => {
     // console.log('UCat =>', item.uCateMainTitle)

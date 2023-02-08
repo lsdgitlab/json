@@ -3,6 +3,8 @@
       "brandTitle": "iffco-tokio-general",
       "alias":"iffco-tokio-general",
       "brandLogo": "../img/client-logo/EY.jpg",
+      "campaign" : "05",
+      "award" :"03",
       "Film": [
          {          
             "filmTumb": "./img/test-thumb-2.jpg",
@@ -13,19 +15,19 @@
          {
             "filmTumb": "../img/test-thumb-2.jpg",
             "filmBig": "./video/mov_bbb.mp4",
-            "filmHashTag": "#iffco-tokio-general",
+            "filmHashTag": "#iffco-tokio2",
             "type": "htmlvid"
          },
          {            
             "filmTumb": "./img/test-thumb-2.jpg",
-            "filmBig": "X31W_-26d-E",
-            "filmHashTag": "#Take Off1",
+            "filmBig": "tom1YxZhVHI",
+            "filmHashTag": "#iffco-tokio3",
             "type": "youtube"
          },
          {
             "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "QpK0z2kGlRs",
-            "filmHashTag": "#Take Off2",
+            "filmHashTag": "#iffco-tokio4",
             "type": "youtube"
          },
          {
@@ -85,14 +87,8 @@
          {
             "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "zM3rDvfx7Pg",
-            "filmHashTag": "#Take Off2",
+            "filmHashTag": "#iffco-tokio-Last",
             "type": "youtube"
-         },
-         {
-            "filmTumb": "./img/test-thumb-2.jpg",
-            "filmBig": "./video/mov_bbb.mp4",
-            "filmHashTag": "#Take Off2",
-            "type": "htmlvid"
          }
       ],
       "Category": [
@@ -194,6 +190,8 @@
       "brandTitle": "HDFC Life",
       "alias":"HDFC-Life",
       "brandLogo": "../img/client-logo/HDFC.jpg",
+      "campaign" : 5,
+      "award" :3,
       "Film": [
          {          
             "filmTumb": "./img/test-thumb-2.jpg",
@@ -209,8 +207,8 @@
          },
          {            
             "filmTumb": "./img/test-thumb-2.jpg",
-            "filmBig": "X31W_-26d-E",
-            "filmHashTag": "#Take Off1",
+            "filmBig": "6-n_szx2XRE",
+            "filmHashTag": "#HDFC Life 2",
             "type": "youtube"
          }
          
@@ -276,6 +274,8 @@
       "brandTitle": "Canon India",
       "alias":"Canon-India",
       "brandLogo": "../img/client-logo/kpmg.jpg",
+      "campaign" : "01",
+      "award" :"08",
       "Film": [
          {          
             "filmTumb": "./img/test-thumb-2.jpg",
@@ -292,19 +292,19 @@
          {            
             "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "X31W_-26d-E",
-            "filmHashTag": "#Take Off1",
+            "filmHashTag": "#Canon India2",
             "type": "youtube"
          },
          {
             "filmTumb": "../img/test-thumb-2.jpg",
             "filmBig": "./video/mov_bbb.mp4",
-            "filmHashTag": "#Canon India1",
+            "filmHashTag": "#Canon India3",
             "type": "htmlvid"
          },
          {            
             "filmTumb": "./img/test-thumb-2.jpg",
             "filmBig": "X31W_-26d-E",
-            "filmHashTag": "#Take Off1",
+            "filmHashTag": "#Canon India4",
             "type": "youtube"
          }
         
