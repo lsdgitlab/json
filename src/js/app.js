@@ -1,27 +1,24 @@
 // console.log("webpack")
+
 import $ from 'jquery'
 import 'owl.carousel'
 import lozad from 'lozad'
-// import request from 'request'
-
 
 // use for dynamic projects
-// import customJs from "./custom.js";
-// import customJs2 from './custom2.js'
 import brandJs from './brand.js'
-// const URL = require('url').Url;
-// const myUrl = new URL('./brand-data.json')
+import galdata from './wikipedia.js';
+// console.log(galdata);
 
 import { gotoId, playPause } from './main'
 // import contentData from './showDate.json'
-import contentData  from "./showDateTest.json";
+// import contentData  from "./showDateTest.json";
+
 
 // console.log('contentData =>')
 // ra -- start
 // console.log(contentData.contentData)
 // const thumb = contentData["imageThumb"]
 // console.log(thumb);
-
 
 // contentData.contentData.forEach(element => {
 //   element.isPriority = true;
@@ -342,18 +339,7 @@ $(document).ready(function () {
 })
 // import "./page-animation/barba";
 
-// const url ="./data1.json";
-// import dtjson from './data1.json'
-// console.log(dtjson)
 
-// myJson();
 
-// function myJson(){
-//     fetch(url)
-//     .then(rep => rep.json())
-//     .then(json => {
 
-//         console.log(json);
 
-//     })
-// }
